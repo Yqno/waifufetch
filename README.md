@@ -1,5 +1,8 @@
 # waifufetch
 A script that prints system information with Custom ASCII art that you can add or edit into the folder via .txt files
+
+
+
 Preview:
 
 ![image](https://github.com/user-attachments/assets/4b5f4287-919c-46ef-96d0-623eead74bdd)
