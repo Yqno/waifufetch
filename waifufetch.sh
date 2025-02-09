@@ -18,7 +18,7 @@ if [[ ${#ASCII_FILES[@]} -eq 0 ]]; then
 fi
 
 # random ascii 
-RANDOM_FILE="${ASCII_FILES[$RANDOM % ${#ASCII_FILES[@]}]}"
+RANDOM_FILE="${ASCII_FILES[RANDOM % ${#ASCII_FILES[@]}]}"
 
 # sys infos
 HOSTNAME=$(hostname)
@@ -43,3 +43,4 @@ echo -e "\033[1;32mUptime:\033[0m $UPTIME"
 echo -e "\033[1;32mShell:\033[0m $SHELL"
 echo -e "\033[1;32mCPU:\033[0m $CPU"
 echo -e "\033[1;32mMemory:\033[0m $MEMORY"
+
