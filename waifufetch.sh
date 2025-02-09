@@ -9,7 +9,8 @@ if [[ -z "$ASCII_DIR" ]]; then
 fi
 
 # reall all ascii txts
-ASCII_FILES=($(find "$ASCII_DIR" -type f -name "*.txt"))
+ASCII_FILES=($(find "$ASCII_DIR" -type f -name "*.txt" -exec test -e {} \; -print))
+
 
 if [[ ${#ASCII_FILES[@]} -eq 0 ]]; then
     echo "No ASCII art files found in '$ASCII_DIR'."
